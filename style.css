@@ -100,6 +100,12 @@ button {
 .color-white-white {
     color: #fff !important;
 }
+.flex {
+    display: flex;
+}
+.grid {
+    display: grid;
+}
 
 /*************************** NAV ***************************/
 .nav {
@@ -368,7 +374,7 @@ button {
     border-radius: 50%;
 }
 .nav__profile-dropdown {
-    --border-radius: .65rem;
+    --border-radius: .55rem;
     position: absolute;
     top: var(--header-height);
     right: 0;
@@ -380,6 +386,7 @@ button {
     display: grid;
     transition: .2s ease;
     box-shadow: 0 2px 10px var(--color-light);
+    pointer-events: none;
     z-index: 1;
 }
 .nav__profile-dropdown-link {
@@ -391,12 +398,137 @@ button {
     border-radius: var(--border-radius);
 }
 .nav__profile-dropdown-link:hover {
-    outline: 2px solid var(--color-primary);
+    outline: 2px solid silver;
 }
 .nav__profile-container:hover .nav__profile-dropdown {
     transform: translateY(0);
     opacity: 1;
+    pointer-events: auto;
 }
+/**************************** MAIN CENTER ****************************/
+.home {
+    padding-top: var(--header-height);
+}
+.center__title-container {
+    padding: .8rem 0;
+    display: flex;
+    align-items: center;
+}
+.center__title {
+    font-size: 1.5rem;
+}
+.center__input-date {
+    margin-left: .8rem;
+    background-color: var(--color-white);
+    font-size: .72rem;
+    padding: 0 .5rem;
+    height: 1.7rem;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+::-webkit-calendar-picker-indicator {
+    margin-left: 5px;
+}
+.center__content {
+    --gap: .8rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, calc(350px - 2rem)));
+    row-gap: var(--gap);
+    column-gap: var(--gap);
+    justify-content: center;
+}
+.center__card {
+    position: relative;
+    background: linear-gradient(#ff796f, #bd261b);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    padding: calc(.95rem + 1.1%);
+    border-radius: 1rem;
+    color: #fff;
+}
+.center__card-top,
+.center__card-middle,
+.center__card-bottom {
+    align-items: center;
+    justify-content: space-between;
+}
+.center__card-middle {
+    padding: 1.7rem 0 2rem;
+}
+.center__card-top-left {
+    display: flex;
+    align-items: center;
+}
+.center__card-top-left-img {
+    width: 1.4rem;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: .2rem;
+    margin-right: 7px;
+}
+.center__card-top-left-name,
+.center__card-cvv,
+.center__card-bottom-sub-title {
+    text-transform: uppercase;
+}
+.center__card-top-left-name {
+    color: #fff;
+    font-size: .87rem;
+}
+.center__card-top-right-img,
+.center__card-chip {
+    width: 2.5rem;
+}
+.center__card-money {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.center__card-bottom-title {
+    font-weight: normal;
+    font-size: .56rem;
+}
+.center__card-bottom-sub-title {
+    font-size: .6rem;
+}
+.center__card-bottom-right {
+    display: flex;
+}
+.center__card-expiry {
+    margin-right: 1.1rem;
+}
+.center__card:nth-of-type(2) {
+    background: linear-gradient(#7f8191, #27282f);
+}
+.center__card:nth-of-type(3) {
+    background: linear-gradient(#5d70ff, #5719c2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /************************** MEDIA QUERIES **************************/
 @media screen and (min-width: 390px) {
@@ -477,6 +609,9 @@ button {
         padding-left: 0;
         height: 77px;
     }
+    .nav__link::before {
+        display: none;
+    }
     .nav__link-icon {
         width: var(--nav-menu-collapsed-width);
         text-align: center;
@@ -497,6 +632,9 @@ button {
         justify-content: flex-start;
         column-gap: 0;
         height: 3.5rem;
+    }
+    .nav__menu.uncollapse .nav__link::before {
+        display: block;
     }
     .nav__menu.uncollapse .nav__link-text {
         font-weight: 500;

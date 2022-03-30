@@ -82,124 +82,277 @@
     </header>
     <main class="main">
       <section class="home">
-        <div class="right">
-          <div class="nav__menu transition-250ms" id="nav-menu">
-            <div class="nav__right-search-bar-container">
-              <div class="nv-mn-srch-bar-sc">
-                <input
-                  type="text"
-                  placeholder="Search"
-                  class="nav__menu-search-bar"
-                  id="nav-menu-search-bar"
-                  name="search"
-                />
-                <button type="submit" class="nav__menu-search-btn">
-                  <span class="material-icons-sharp nv-mn-srch-btn-icn">
-                    search
-                  </span>
-                </button>
-              </div>
-            </div>      
-            <div class="theme-toggle-container">
-                <div class="thm-tggl-sb-cntnr" id="theme-toggle-sub-container">
-                    <div class="theme-toggle-icon-bg"></div>
-                    <span class="material-icons-sharp">
-                        light_mode
+        <div class="container home__container">
+          <div class="right">
+            <div class="nav__menu transition-250ms" id="nav-menu">
+              <div class="nav__right-search-bar-container">
+                <div class="nv-mn-srch-bar-sc">
+                  <input
+                    type="text"
+                    placeholder="Search"
+                    class="nav__menu-search-bar"
+                    id="nav-menu-search-bar"
+                    name="search"
+                  />
+                  <button type="submit" class="nav__menu-search-btn">
+                    <span class="material-icons-sharp nv-mn-srch-btn-icn">
+                      search
                     </span>
-                    <span class="material-icons-sharp">
-                        dark_mode
-                    </span>
+                  </button>
                 </div>
-            </div>
-            <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#" class="nav__link">
-                <span class="material-icons-sharp nav__link-icon">
-                  dashboard
-                </span>
-                <span class="nav__link-text"> Dashboard </span>
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">
-                <span class="material-icons-sharp nav__link-icon">
-                  currency_exchange
-                </span>
-                <span class="nav__link-text"> Exchange </span>
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">
-                <span class="material-icons-sharp nav__link-icon">
-                  account_balance_wallet
-                </span>
-                <span class="nav__link-text"> Wallet </span>
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">
-                <span class="material-icons-sharp nav__link-icon">
-                  payment
-                </span>
-                <span class="nav__link-text"> Transactions </span>
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">
-                <span class="material-icons-sharp nav__link-icon">
-                  pie_chart
-                </span>
-                <span class="nav__link-text"> Analytics </span>
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">
-                <span class="material-icons-sharp nav__link-icon">
-                  chat
-                </span>
-                <span class="nav__link-text"> Messages </span>
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">
-                <span class="material-icons-sharp nav__link-icon">
-                  help_center
-                </span>
-                <span class="nav__link-text"> Help center </span>
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">
-                <span class="material-icons-sharp nav__link-icon">
-                  settings
-                </span>
-                <span class="nav__link-text"> Settings </span>
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">
-                <span class="material-icons-sharp nav__link-icon">
-                  logout
-                </span>
-                <span class="nav__link-text"> Logout </span>
-              </a>
-            </li>
-            <div class="updates__available">
-              <span class="material-icons-sharp"> update </span>
-              <div class="updates__available-title-container">
-                <h3>Updates available</h3>
+              </div>      
+              <div class="theme-toggle-container">
+                  <div class="thm-tggl-sb-cntnr" id="theme-toggle-sub-container">
+                      <div class="theme-toggle-icon-bg"></div>
+                      <span class="material-icons-sharp">
+                          light_mode
+                      </span>
+                      <span class="material-icons-sharp">
+                          dark_mode
+                      </span>
+                  </div>
               </div>
-              <ul>
-                <li>Security updates</li>
-                <li>General updates</li>
-              </ul>
-              <a href="#" class="transition-200ms">Update now</a>
+              <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#" class="nav__link">
+                  <span class="material-icons-sharp nav__link-icon">
+                    dashboard
+                  </span>
+                  <span class="nav__link-text"> Dashboard </span>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">
+                  <span class="material-icons-sharp nav__link-icon">
+                    currency_exchange
+                  </span>
+                  <span class="nav__link-text"> Exchange </span>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">
+                  <span class="material-icons-sharp nav__link-icon">
+                    account_balance_wallet
+                  </span>
+                  <span class="nav__link-text"> Wallet </span>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">
+                  <span class="material-icons-sharp nav__link-icon">
+                    payment
+                  </span>
+                  <span class="nav__link-text"> Transactions </span>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">
+                  <span class="material-icons-sharp nav__link-icon">
+                    pie_chart
+                  </span>
+                  <span class="nav__link-text"> Analytics </span>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">
+                  <span class="material-icons-sharp nav__link-icon">
+                    chat
+                  </span>
+                  <span class="nav__link-text"> Messages </span>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">
+                  <span class="material-icons-sharp nav__link-icon">
+                    help_center
+                  </span>
+                  <span class="nav__link-text"> Help center </span>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">
+                  <span class="material-icons-sharp nav__link-icon">
+                    settings
+                  </span>
+                  <span class="nav__link-text"> Settings </span>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">
+                  <span class="material-icons-sharp nav__link-icon">
+                    logout
+                  </span>
+                  <span class="nav__link-text"> Logout </span>
+                </a>
+              </li>
+              <div class="updates__available">
+                <span class="material-icons-sharp"> update </span>
+                <div class="updates__available-title-container">
+                  <h3>Updates available</h3>
+                </div>
+                <ul>
+                  <li>Security updates</li>
+                  <li>General updates</li>
+                </ul>
+                <a href="#" class="transition-200ms">Update now</a>
+              </div>
+              </ul>      
             </div>
-            </ul>      
           </div>
+          <!--------------------- CENTER --------------------->
+          <div class="center">
+            <div class="center__title-container">
+              <h1 class="center__title">
+                Overview
+              </h1>
+              <input type="date" min="1950-01-01" max="2025-12-31" class="center__input-date">
+            </div>
+            <div class="center__content">
+              <article class="center__card">
+                <div class="center__card-top flex">
+                  <div class="center__card-top-left">
+                    <img src="images/BTC.png" alt="" class="center__card-top-left-img">
+                    <span class="center__card-top-left-name">
+                      btc
+                    </span>
+                  </div>
+                  <div class="center__card-top-right">
+                    <img src="images/visa.png" alt="" class="center__card-top-right-img">
+                  </div>
+                </div>
+                <div class="center__card-middle flex">
+                  <span class="center__card-money">
+                    $827,199
+                  </span>
+                  <img src="images/card chip.png" alt="" class="center__card-chip">
+                </div>
+                <div class="center__card-bottom flex">
+                  <div class="center__card-bottom-left">
+                    <h4 class="center__card-bottom-title">
+                      Card holder
+                    </h4>
+                    <h5 class="center__card-bottom-sub-title">
+                      john doe
+                    </h5>
+                  </div>
+                  <div class="center__card-bottom-right">
+                    <div class="center__card-expiry">
+                      <h4 class="center__card-bottom-title">
+                        Expiry
+                      </h4>
+                      <h5 class="center__card-bottom-sub-title">
+                        08/23
+                      </h5>
+                    </div>
+                    <div class="center__card-cvv">
+                      <h4 class="center__card-bottom-title">
+                        cvv
+                      </h4>
+                      <h5 class="center__card-bottom-sub-title">
+                        123
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="center__card">
+                <div class="center__card-top flex">
+                  <div class="center__card-top-left">
+                    <img src="images/ETH.png" alt="" class="center__card-top-left-img">
+                    <span class="center__card-top-left-name">
+                      eht
+                    </span>
+                  </div>
+                  <div class="center__card-top-right">
+                    <img src="images/master card.png" alt="" class="center__card-top-right-img">
+                  </div>
+                </div>
+                <div class="center__card-middle flex">
+                  <span class="center__card-money">
+                    $95,623
+                  </span>
+                  <img src="images/card chip.png" alt="" class="center__card-chip">
+                </div>
+                <div class="center__card-bottom flex">
+                  <div class="center__card-bottom-left">
+                    <h4 class="center__card-bottom-title">
+                      Card holder
+                    </h4>
+                    <h5 class="center__card-bottom-sub-title">
+                      john doe
+                    </h5>
+                  </div>
+                  <div class="center__card-bottom-right">
+                    <div class="center__card-expiry">
+                      <h4 class="center__card-bottom-title">
+                        Expiry
+                      </h4>
+                      <h5 class="center__card-bottom-sub-title">
+                        08/23
+                      </h5>
+                    </div>
+                    <div class="center__card-cvv">
+                      <h4 class="center__card-bottom-title">
+                        cvv
+                      </h4>
+                      <h5 class="center__card-bottom-sub-title">
+                        793
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="center__card">
+                <div class="center__card-top flex">
+                  <div class="center__card-top-left">
+                    <img src="images/BTC.png" alt="" class="center__card-top-left-img">
+                    <span class="center__card-top-left-name">
+                      btc
+                    </span>
+                  </div>
+                  <div class="center__card-top-right">
+                    <img src="images/visa.png" alt="" class="center__card-top-right-img">
+                  </div>
+                </div>
+                <div class="center__card-middle flex">
+                  <span class="center__card-money">
+                    $827,199
+                  </span>
+                  <img src="images/card chip.png" alt="" class="center__card-chip">
+                </div>
+                <div class="center__card-bottom flex">
+                  <div class="center__card-bottom-left">
+                    <h4 class="center__card-bottom-title">
+                      Card holder
+                    </h4>
+                    <h5 class="center__card-bottom-sub-title">
+                      john doe
+                    </h5>
+                  </div>
+                  <div class="center__card-bottom-right">
+                    <div class="center__card-expiry">
+                      <h4 class="center__card-bottom-title">
+                        Expiry
+                      </h4>
+                      <h5 class="center__card-bottom-sub-title">
+                        08/23
+                      </h5>
+                    </div>
+                    <div class="center__card-cvv">
+                      <h4 class="center__card-bottom-title">
+                        cvv
+                      </h4>
+                      <h5 class="center__card-bottom-sub-title">
+                        123
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="left"></div>
         </div>
-        <div class="middle"></div>
-        <div class="left"></div>
       </section>
     </main>
     <script type="text/javascript" src="script.js"></script>
