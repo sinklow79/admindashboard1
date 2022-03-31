@@ -14,6 +14,7 @@
     --color-dark: #363949;
     --color-dark-1: #677483;
     --color-gray: rgba(200,200,200,1);
+    --color-purple-light: rgba(160,99,245,.2);
     /************************* BOX-SHADOW *************************/
     --box-shadow-1: 0 .2rem .2rem;
     --box-shadow-2: 0 .5rem .5rem;
@@ -26,6 +27,7 @@
     --container-padding: 1rem;
     --header-height: 3rem;
     --card-padding: 1.2rem;
+    --section-padding: 2rem;
     /*********************** BORDER-RADIUS ***********************/
     --border-radius-1: .4rem;
     --border-radius-2: .8rem;
@@ -50,6 +52,7 @@ input {
 }
 body {
     background-color: var(--color-background);
+    color: var(--color-dark);
 }
 ul {
     list-style: none;
@@ -100,13 +103,24 @@ button {
 .color-white-white {
     color: #fff !important;
 }
+.color-success {
+    color: var(--color-success) !important;
+}
+.color-danger {
+    color: var(--color-danger) !important;
+}
+.color-warning {
+    color: var(--color-warning) !important;
+} 
+.color-primary {
+    color: var(--color-primary);
+}  
 .flex {
     display: flex;
 }
 .grid {
     display: grid;
 }
-
 /*************************** NAV ***************************/
 .nav {
     position: fixed;
@@ -409,8 +423,11 @@ button {
 .home {
     padding-top: var(--header-height);
 }
+.center {
+    --gap: 1rem;
+}
 .center__title-container {
-    padding: .8rem 0;
+    padding: var(--gap) 0;
     display: flex;
     align-items: center;
 }
@@ -504,10 +521,180 @@ button {
 .center__card:nth-of-type(3) {
     background: linear-gradient(#5d70ff, #5719c2);
 }
-
-
-
-
+/*********************** CENTER DETAILS ***********************/
+.center__details-container {
+    display: flex;
+    column-gap: .5rem;
+}
+.center__details {
+    padding-top: var(--gap);
+    overflow: hidden;
+}
+.center__details .title {
+    font-size: .75rem
+}
+.center__details-label {
+    cursor: pointer;
+    font-size: .7rem;
+    font-weight: 500;
+    color: var(--color-dark);
+    user-select: none;
+}
+.center__details-label::before {
+    content: ">";
+    display: inline-block;
+    font-size: .75rem;
+    font-weight: 900;
+    margin-right: .3rem;
+    transition: .15s;
+}
+.center__details-input {
+    display: none;
+}
+.center__details-dropdown {
+    max-height: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: .15s ease;
+}
+.center__details-dropdown-money {
+    display: block;
+    font-size: 100%;
+    font-weight: 900;
+}
+.center__details-dropdown-percent {
+    font-size: .7rem;
+    font-weight: 700;
+    color: green;
+}
+.center__details-p {
+    font-size: .65rem;
+    color: var(--color-dark-1);
+}
+.center__details-input:checked ~ .center__details-dropdown {
+    max-height: 100px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.center__details-input:checked + .center__details-label::before {
+    transform: rotate(90deg);
+}
+.center__graph {
+    padding-top: var(--section-padding);
+}
+.my__chart-container {
+    height: calc(250px + 5vw);
+}
+#myChart {
+    background-color: var(--color-white);
+    max-width: 100%;
+    margin-top: 2rem;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+/********************** CENTER GRAPH TOP **********************/
+.center__graph-top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .6rem;
+}
+.section__title {
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+.center__graph-top .box {
+    background-color: var(--color-white);
+    color: var(--color-dark);
+    border-radius: 5px;
+    padding: 0 1rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    font-size: .7rem;
+}
+.center__graph-top .box:hover {
+    background-color: var(--color-primary);
+    color: #fff !important;
+}
+.center__graph-top .box:hover .box-icon {
+    color: #000 !important;
+}
+.center__graph-top .box:nth-of-type(1) {
+    font-size: 1rem;
+    font-weight: 700;
+}
+.center__graph-top .box-icon {
+    font-size: .55rem;
+    display: inline-block;
+    margin-right: .45rem;
+}
+.center__graph-top .box-price {
+    font-weight: 700;
+    margin-left: 1.3rem;
+}
+/************************** INVESTMENTS **************************/
+.left {    
+    --padding: calc(1rem + .8%);
+    --radius: 2rem;
+    --font-size: calc(.62rem + .2vw);
+}
+.investments {
+    background-color: var(--color-white);
+    border-radius: var(--radius);
+    border-bottom: 2px solid var(--color-white);
+}
+.investments__top,
+.more-link {
+    display: flex;
+    align-items: center;
+}
+.investments__top {
+    padding: var(--padding) var(--padding) .5rem var(--padding);
+}
+.investments__top .section__title {
+    margin-bottom: 0;
+}
+.more-link {
+    margin-left: auto;
+    font-size: calc(.62rem + .2vw);
+    color: var(--color-dark);
+}
+.investments .left-chevron {
+    font-size: 1rem;
+}
+.investments__content {
+    display: flex;
+    align-items: center;
+    font-size: var(--font-size);
+    padding: var(--padding);
+    justify-content: space-between;
+    border-bottom: 1px solid var(--color-background);
+}
+.investments__content:hover {
+    background-color: var(--color-background);
+}
+.investments__content-img {
+    width: calc(1.7rem + .1vw);
+}
+.investments__title {
+    font-size: calc(var(--font-size) + .1vw);
+}
+.investments__date,
+.investments__bonds,
+.investments__money {
+    display: flex;
+    flex-direction: column;
+    row-gap: .2rem;
+}
+.investments__content:nth-last-of-type(1) {
+    border-bottom-left-radius: var(--radius); 
+    border-bottom-right-radius: var(--radius); 
+    border-bottom: none;
+}
+.investments__money1 {
+    font-weight: 900;
+}
+/********************* RECENT TRANSACTIONS *********************/
 
 
 

@@ -205,7 +205,7 @@
               <h1 class="center__title">
                 Overview
               </h1>
-              <input type="date" min="1950-01-01" max="2025-12-31" class="center__input-date">
+              <input type="date" value="2001-07-09" min="1950-01-01" max="2025-12-31" class="center__input-date">
             </div>
             <div class="center__content">
               <article class="center__card">
@@ -350,11 +350,321 @@
                 </div>
               </article>
             </div>
+            <div class="center__details-container">
+              <div class="center__details">
+                <h4 class="title">
+                  Income
+                </h4>
+                <div class="center__details-content">
+                  <input type="checkbox" id="center-details-1" class="center__details-input">
+                  <label for="center-details-1" class="center__details-label">Details</label>
+                  <div class="center__details-dropdown">
+                    <span class="center__details-dropdown-money">
+                      $29,005
+                    </span>
+                    <span class="center__details-dropdown-percent">
+                      +2.5%
+                    </span>
+                  </div>
+                  <p class="center__details-p">
+                    Compared to $26,983 last month
+                  </p>
+                </div>
+              </div>
+              <div class="center__details">
+                <h4 class="title">
+                  Expenses
+                </h4>
+                <div class="center__details-content">
+                  <input type="checkbox" id="center-details-2" class="center__details-input">
+                  <label for="center-details-2" class="center__details-label">Details</label>
+                  <div class="center__details-dropdown">
+                    <span class="center__details-dropdown-money">
+                      $19,005
+                    </span>
+                    <span class="center__details-dropdown-percent" style="color: red">
+                    -8.9%
+                    </span>
+                  </div>
+                  <p class="center__details-p">
+                    Compared to $26,983 last month
+                  </p>
+                </div>
+              </div>
+              <div class="center__details">
+                <h4 class="title">
+                  Cashback
+                </h4>
+                <div class="center__details-content">
+                  <input type="checkbox" id="center-details-3" class="center__details-input">
+                  <label for="center-details-3" class="center__details-label">Details</label>
+                  <div class="center__details-dropdown">
+                    <span class="center__details-dropdown-money">
+                      $9,004
+                    </span>
+                    <span class="center__details-dropdown-percent">
+                      +7.1%
+                    </span>
+                  </div>
+                  <p class="center__details-p">
+                    Compared to $3,028 last month
+                  </p>
+                </div>
+              </div>
+              <div class="center__details">
+                <h4 class="title">
+                  Income
+                </h4>
+                <div class="center__details-content">
+                  <input type="checkbox" id="center-details-4" class="center__details-input">
+                  <label for="center-details-4" class="center__details-label">Details</label>
+                  <div class="center__details-dropdown">
+                    <span class="center__details-dropdown-money">
+                      $29,005
+                    </span>
+                    <span class="center__details-dropdown-percent">
+                      +2.5%
+                    </span>
+                  </div>
+                  <p class="center__details-p">
+                    Compared to $26,983 last month
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="center__graph">
+              <h2 class="section__title">
+                fast payment
+              </h2>
+              <div class="center__graph-top">
+                <div class="box">
+                  +
+                </div>
+                <div class="box">
+                  <span class=" color-primary material-icons-sharp box-icon">
+                    circle
+                  </span>
+                  <span class="box-name">
+                    Training
+                  </span>
+                  <span class="box-price">
+                    $50
+                  </span>
+                </div>
+                <div class="box">
+                  <span class="material-icons-sharp box-icon color-success">
+                    circle
+                  </span>
+                  <span class="box-name">
+                    Internet
+                  </span>
+                  <span class="box-price">
+                    $40
+                  </span>
+                </div>
+                <div class="box">
+                  <span class="material-icons-sharp box-icon color-primary">
+                    circle
+                  </span>
+                  <span class="box-name">
+                    Gas
+                  </span>
+                  <span class="box-price">
+                    $190
+                  </span>
+                </div>
+                <div class="box">
+                  <span class="material-icons-sharp box-icon color-danger">
+                    circle
+                  </span>
+                  <span class="box-name">
+                    Movies
+                  </span>
+                  <span class="box-price">
+                    $35
+                  </span>
+                </div>
+                <div class="box">
+                  <span class="material-icons-sharp box-icon color-primary">
+                    circle
+                  </span>
+                  <span class="box-name">
+                    Education
+                  </span>
+                  <span class="box-price">
+                    $999
+                  </span>
+                </div>
+                <div class="box">
+                  <span class="material-icons-sharp box-icon color-danger">
+                    circle
+                  </span>
+                  <span class="box-name">
+                    Electricity
+                  </span>
+                  <span class="box-price">
+                    $109
+                  </span>
+                </div>
+                <div class="box">
+                  <span class="material-icons-sharp box-icon color-success">
+                    circle
+                  </span>
+                  <span class="box-name">
+                    Food
+                  </span>
+                  <span class="box-price">
+                    $399
+                  </span>
+                </div>
+              </div>
+              <div class="my__chart-container">
+                <canvas id="myChart"></canvas>
+              </div>
+            </div>
           </div>
-          <div class="left"></div>
+          <div class="left">
+            <div class="investments">
+              <div class="investments__top">
+                <h2 class="section__title">
+                  Investments
+                </h2>
+                <a href="#" class="investments__top-link more-link">
+                  More 
+                  <span class="material-icons-sharp left-chevron">
+                    chevron_right
+                  </span>
+                </a>
+              </div>
+              <div class="investments__container">
+                <div class="investments__content">
+                  <img src="images/uniliver.png" alt="" class="investments__content-img">
+                  <h4 class="investments__title">
+                    Uniliver
+                  </h4>
+                  <div class="investments__date">
+                    <span class="investments__date1">
+                      7 Nov 2021
+                    </span>
+                    <span class="investments__date2">
+                      9:14 PM
+                    </span>
+                  </div>
+                  <div class="investments__bonds">
+                    <span class="1">
+                      1402
+                    </span>
+                    <span class="2">
+                      Bonds
+                    </span>
+                  </div>
+                  <div class="investments__money">
+                    <span class="investments__money1">
+                      $20,033
+                    </span>
+                    <span class="investments__money2 color-danger">
+                      -4.27%
+                    </span>
+                  </div>
+                </div>
+                <div class="investments__content">
+                  <img src="images/monster.png" alt="" class="investments__content-img">
+                  <h4 class="investments__title">
+                    Monster
+                  </h4>
+                  <div class="investments__date">
+                    <span class="investments__date1">
+                      7 Nov 2021
+                    </span>
+                    <span class="investments__date2">
+                      9:14 PM
+                    </span>
+                  </div>
+                  <div class="investments__bonds">
+                    <span class="1">
+                      1402
+                    </span>
+                    <span class="2">
+                      Bonds
+                    </span>
+                  </div>
+                  <div class="investments__money">
+                    <span class="investments__money1">
+                      $20,033
+                    </span>
+                    <span class="investments__money2 color-danger">
+                      4.27%
+                    </span>
+                  </div>
+                </div>
+                <div class="investments__content">
+                  <img src="images/tesla.png" alt="" class="investments__content-img">
+                  <h4 class="investments__title">
+                    Tesla
+                  </h4>
+                  <div class="investments__date">
+                    <span class="investments__date1">
+                      7 Nov 2021
+                    </span>
+                    <span class="investments__date2">
+                      9:14 PM
+                    </span>
+                  </div>
+                  <div class="investments__bonds">
+                    <span class="1">
+                      1202
+                    </span>
+                    <span class="2">
+                      Bonds
+                    </span>
+                  </div>
+                  <div class="investments__money">
+                    <span class="investments__money1">
+                      $30,033
+                    </span>
+                    <span class="investments__money2 color-success">
+                      -5.55%
+                    </span>
+                  </div>
+                </div>
+                <div class="investments__content">
+                  <img src="images/mcdonalds.png" alt="" class="investments__content-img">
+                  <h4 class="investments__title">
+                    McDonalds
+                  </h4>
+                  <div class="investments__date">
+                    <span class="investments__date1">
+                      7 Nov 2021
+                    </span>
+                    <span class="investments__date2">
+                      9:14 PM
+                    </span>
+                  </div>
+                  <div class="investments__bonds">
+                    <span class="1">
+                      1400
+                    </span>
+                    <span class="2">
+                      Bonds
+                    </span>
+                  </div>
+                  <div class="investments__money">
+                    <span class="investments__money1">
+                      $12,033
+                    </span>
+                    <span class="investments__money2 color-danger">
+                      -6.69%
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-    </main>
+      <div style="height: 5000px"></div>
+    </main><script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="graphs.js"></script>
     <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
