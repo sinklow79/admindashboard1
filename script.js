@@ -21,5 +21,6 @@ for (let i = 0; i < themeToggleContainers.length; i++) {
     themeToggleContainers[i].addEventListener('click', () => {
         iconBgs[i].classList.toggle("left-50");
         themeToggleContainers[i].children[2].classList.toggle("color-white-white");
+        document.body.classList.toggle("dark-theme");
     })
 }
