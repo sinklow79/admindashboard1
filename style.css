@@ -114,7 +114,16 @@ button {
 } 
 .color-primary {
     color: var(--color-primary);
+}
+.bg-color-primary-1 {
+    background-color: var(--color-primary-1);
 }  
+.bg-color-dark {
+    background-color: #27282f;
+}
+.bg-color-red {
+    background-color: red;
+}
 .flex {
     display: flex;
 }
@@ -464,6 +473,7 @@ button {
     padding: calc(.95rem + 1.1%);
     border-radius: 1rem;
     color: #fff;
+    box-shadow: 0 15px 40px -10px #ff796f;
 }
 .center__card-top,
 .center__card-middle,
@@ -517,14 +527,29 @@ button {
 }
 .center__card:nth-of-type(2) {
     background: linear-gradient(#7f8191, #27282f);
+    box-shadow: 0 15px 40px -10px #707180;
 }
 .center__card:nth-of-type(3) {
     background: linear-gradient(#5d70ff, #5719c2);
+    box-shadow: 0 15px 40px -10px #5d70ff;
 }
 /*********************** CENTER DETAILS ***********************/
 .center__details-container {
     display: flex;
-    column-gap: .5rem;
+    column-gap: .7rem;
+    justify-content: space-between;
+}
+@media screen and (min-width: 681px) {
+    .center__details-container {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+@media screen and (min-width: 1012px) {
+    .center__details-container {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
 }
 .center__details {
     padding-top: var(--gap);
@@ -611,6 +636,7 @@ button {
     display: flex;
     align-items: center;
     font-size: .7rem;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.15);
 }
 .center__graph-top .box:hover {
     background-color: var(--color-primary);
@@ -638,7 +664,7 @@ button {
     --radius: 2rem;
     --font-size: calc(.62rem + .2vw);
 }
-.investments {
+.investments__container {
     background-color: var(--color-white);
     border-radius: var(--radius);
     border-bottom: 2px solid var(--color-white);
@@ -649,7 +675,8 @@ button {
     align-items: center;
 }
 .investments__top {
-    padding: var(--padding) var(--padding) .5rem var(--padding);
+    padding: var(--padding);
+    padding-bottom: .5rem;
 }
 .investments__top .section__title {
     margin-bottom: 0;
@@ -695,7 +722,69 @@ button {
     font-weight: 900;
 }
 /********************* RECENT TRANSACTIONS *********************/
-
+.recent__transactions {
+    padding-top: var(--section-padding);
+}
+.recent__transactions .investments__top {
+    padding-top: 0;
+    padding-right: var(--container-padding);
+    padding-left: var(--container-padding);
+}
+.rt__content,
+.rt__content-box{
+    display: flex;
+    align-items: center;
+    font-size: .7rem;
+}
+.rt__content {
+    justify-content: space-between;
+    border-radius: 1rem;
+    padding: var(--padding) var(--container-padding);
+}
+.rt__content:hover {
+    background-color: var(--color-white);
+}
+.rt__content-img-container {
+    width: 3.3rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    margin-right: .7rem;
+    box-shadow: 0 4px 10px -3px rgb(255, 82, 82);
+}
+.rt__content-img {
+    width: 1.7rem;
+}
+.rt__content-icn {
+    display: block;
+    font-size: 1.2rem;
+    padding: .5rem;
+    border-radius: 10px;
+    background-color: var(--color-purple-light);
+    margin-right: .7rem;
+}
+.rt__content-box-title {
+    font-size: .72rem;
+    text-transform: capitalize;
+}
+.rt__content-box-info {
+    display: flex;
+    flex-direction: column;
+    font-size: .6rem;
+}
+.rt__content-money {
+    font-weight: 900;
+}
+.rt__content:nth-of-type(2) .rt__content-img-container,
+.rt__content:nth-of-type(5) .rt__content-img-container {
+    box-shadow: 0 4px 10px -3px var(--color-primary);
+}
+.rt__content:nth-of-type(3) .rt__content-img-container, 
+.rt__content:nth-of-type(6) .rt__content-img-container {
+    box-shadow: 0 4px 10px -3px #707180;
+}
 
 
 
