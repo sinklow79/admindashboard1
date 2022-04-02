@@ -138,6 +138,14 @@ button {
     --color-gray-dark: #adacb5;
     --color-dark-1: #aaa;
 }
+.dark-theme .updates__available {
+    background-color: #000;
+}
+.dark-theme .updates__available span,
+.dark-theme .updates__available h3,
+.dark-theme .updates__available a:hover {
+    color: var(--color-dark);
+}
 /*************************** NAV ***************************/
 .nav {
     position: fixed;
