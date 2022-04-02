@@ -5,6 +5,7 @@ function mediaQuery1200 (x) {
     if (x.matches) {
         navMenuBtn.addEventListener("click", () => {
             navMenu.classList.toggle("uncollapse");
+            document.querySelector('.home').classList.toggle("home-margin-left");
         })
     } else {
         navMenuBtn.addEventListener("click", () => {
